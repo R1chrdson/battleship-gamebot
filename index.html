@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css.css">
+  <script src="jquery.js"></script>
+  <script src="jquery-ui.js"></script>
+  <title>Battleship game</title>
+</head>
+
+<body>
+  <div class="notifications-container">
+    <div class="notification info info-place">
+      <div class="notification-message">Place the ships.</div>
+    </div>
+    <div class="notification start-turn none">
+      <div class="notification-message">The game started, your turn.</div>
+    </div>
+    <div class="notification turn none">
+      <div class="notification-message">
+        Opponent missed. Your turn!
+      </div>
+    </div>
+    <div class="notification info wait-opponent none">
+      <div class="notification-message">
+        Please, wait the opponent turn.
+      </div>
+    </div>
+    <div class="notification info opponent-again none">
+      <div class="notification-message">
+        Opponent hit your ship. His turn again!
+      </div>
+    </div>
+      <div class="notification info your-again none">
+        <div class="notification-message">
+          You hit the opponent ship. Your turn again!
+        </div>
+    </div>
+    <div class="notification warning lose none">
+      <div class="notification-message">
+        Game over, you lose!
+        <a href="" class="button replay">Replay</a>
+      </div>
+    </div>
+    <div class="notification win none">
+      <div class="notification-message">
+        Game over, you win!
+        <a href="" class="button replay">Replay</a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="leftsquare">
+        <div class="instruction">Drag the ships and click to rotate</div>
+      <div class="placeholder">
+        <table class="battlefield">
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+  </div>
+    <div class="rightsquare">
+      <div class="placeholder">
+        <table class="battlefield wait">
+          <tbody>
+          </tbody>
+        </table>
+        <div class="start">
+            <p>Press this button to start</p>
+            <div class="button play">Play</div>
+          </div>
+      </div>
+    </div>
+    <div class="settings">
+      <fieldset>
+        <legend>Settings</legend>
+        <div class="settings-container">
+          <div id="randomise-button"><p>Randomise</p><img src="random.svg"></img></div>
+          <div id="reset-button"><p>Reset</p><img src="table.svg"></img></div>
+          <div id="mark-checkbox" check="1"><p>Mark empty cells</p><img src="pencil.svg"></div>
+          <div id="delay-checkbox" check="1"><p>Delay between opponent shots</p><img src="clock.svg"></div>
+          <div id="ships-checkbox" check="0"><p>Show opponent ships</p><img src="eye.svg"></div>
+        </div>
+      </fieldset>
+    </div>
+    </div>
+  </div>
+
+</body>
+<script src="js.js"></script>
+</html>
