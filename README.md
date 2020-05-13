@@ -4,7 +4,7 @@
 
 # Brief intro
 
-This bot uses strategy researched to be the best. The sense of strategy contains on finding the largest ship and eliminating ships of descending size by same pattern extrapolated for whole game table.
+This bot uses strategy, researched to be the best. The sense of strategy contains on finding the largest ship and eliminating ships of descending size by same pattern extrapolated for whole game table.
 
 <img src="https://gdurl.com/FNd3" alt="Image of pattern for 4-sized ship" width="250"/>
 
